@@ -1,13 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-      var time=640;
-      var Man=8;
-      var c=time/Man;
-      System.out.println("Всего работников в компании — "+c+"человек");
-      var d=94;
-      var r=c+d;
-      var t=time/r;
-      System.out.println("Если в компании работает" + r + "человек, то всего"+t+"часов работы может быть поделено между сотрудниками");
+      var totalTime=640;
+      var workingDay=8;
+      var workers=totalTime/workingDay;
+      System.out.println("Всего работников в компании — "+workers+"человек");
+      var overWorkers=94;
+      var totalWorkers=overWorkers+workers;
+      var hourWorker=totalWorkers*workingDay;
+      System.out.println("Если в компании работает" + totalWorkers + "человек, то всего"+hourWorker+"часов работы может быть поделено между сотрудниками");
 
 
     }
